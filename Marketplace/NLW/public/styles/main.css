@@ -1,0 +1,41 @@
+/*root faz referência à raiz do documento onde são colocados atalhos
+ajuda, por ex a não repetir cores*/
+:root {
+    --title-color: #59389b;
+    --primary-color: #34cb79;
+}
+
+/*para zerar tudo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+/*no caso dos nomes das fontes terem um nome só (roboto ou ubuntu),
+não precisa das aspas, mas em caso de nome composto, como comic sans,
+por exemplo, deve-se ter as aspas: ---> 'comic sans' <---*/
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /*deixa fonte mais "gostosa de se ver, não vi diferença*/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+/* BOX MODEL 
+Toda caixa tem
+largura, altura, espaçamentos, preenchimentos
+bordas, cor, fundo, maneira que é vista pelo html (display)
+posicionamento, alinhamentos
+*/
